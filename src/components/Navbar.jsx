@@ -9,7 +9,7 @@ const Navbar = () => {
       <nav className="bg-blue-500 flex text-white px-14 py-4 font-bold text-lg justify-between">
         <NavLink to="/">
           <img
-            src="./src/assets/online-shop.png"
+            src="src/assets/online-shop.png"
             alt="storeicon"
             className="w-10 h-10 mx-auto"
           />
