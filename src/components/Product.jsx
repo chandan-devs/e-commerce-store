@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { add } from "../store/cartSlice.js";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../store/productSlice.js";
+import spinner from '../assets/Spinner-5.gif'
+import errorLoading from '../assets/Ghost.gif'
 
 const Product = () => {
   // const [Products, setProducts] = useState([]);
@@ -32,13 +34,13 @@ const Product = () => {
   if (status === "loading") {
     return (
       <div className="flex justify-center items-center h-screen">
-        <img src="/src/assets/Spinner-5.gif" alt="preloader" />
+        <img src={spinner} alt="preloader" />
       </div>
     );
   } else if (status === "error") {
     return (
       <div className="flex justify-center items-center h-screen">
-        <img src="/src/assets/Ghost.gif" alt="preloader" />
+        <img src={errorLoading} alt="preloader" />
       </div>
     );
   } else {

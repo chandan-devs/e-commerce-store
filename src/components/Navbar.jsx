@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import onlineShop from '../assets/online-shop.png'
 
 const Navbar = () => {
   const cart = useSelector((state) => state.cart);
@@ -9,7 +10,7 @@ const Navbar = () => {
       <nav className="bg-blue-500 flex text-white px-14 py-4 font-bold text-lg justify-between">
         <NavLink to="/">
           <img
-            src="src/assets/online-shop.png"
+            src={onlineShop}
             alt="storeicon"
             className="w-10 h-10 mx-auto"
           />
